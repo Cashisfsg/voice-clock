@@ -1,0 +1,22 @@
+#clock .second-hand {
+    stroke: #ff4136;
+    stroke-width: 3;
+}
+
+#clock .minute-hand {
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+#clock .hour-hand {
+    stroke-width: 12;
+    stroke-linecap: round;
+}
+
+#clock .second-label {
+    font-size: 12px;
+}
+
+#clock .hour-label {
+    font-size: 24px;
+}
