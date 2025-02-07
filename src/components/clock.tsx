@@ -229,11 +229,7 @@ export const Clock = () => {
     const onClickHandler: React.MouseEventHandler<HTMLButtonElement> = () => {
         const now = new Date();
         const hours = Math.round(
-            (now.getHours() % 12) +
-                (now.getMinutes() > 5
-                    ? now.getMinutes() - 5
-                    : now.getMinutes()) /
-                    60
+            (now.getHours() % 12) + (now.getMinutes() - 5) / 60
         );
         const minutes =
             now.getMinutes() > 30 ? 60 - now.getMinutes() : now.getMinutes();
